@@ -7,10 +7,21 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
+    "@nuxt/eslint": "^0.4.0",
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@primevue/themes": "^4.0.3",
     "nuxt": "^3.12.4",
+    "primevue": "^4.0.3",
+    "typescript": "^5.5.4",
     "vue": "latest"
+  },
+  "devDependencies": {
+    "@primevue/nuxt-module": "^4.0.3",
+    "sass": "^1.77.8"
   }
 }
