@@ -1,6 +1,4 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import Aura from '@primevue/themes/aura';
-import PrimeTheme from 'assets/primeTheme';
 
 export default defineNuxtConfig({
   css: ['~/assets/css/main.scss'],
@@ -50,7 +48,7 @@ export default defineNuxtConfig({
 
   googleFonts: {
     families: {
-      Roboto: "300..900"
+      Roboto: [300, 400, 500, 700, 900]
     }
   }
 });

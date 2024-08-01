@@ -19,6 +19,7 @@
     "@primevue/themes": "^4.0.3",
     "eslint": "^8.57.0",
     "nuxt": "^3.12.4",
+    "primeicons": "^7.0.0",
     "primevue": "^4.0.3",
     "typescript": "^5.5.4",
     "vue": "latest"
