@@ -24,7 +24,12 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxtjs/tailwindcss', '@primevue/nuxt-module', '@nuxt/eslint'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@primevue/nuxt-module',
+    '@nuxt/eslint',
+    "@nuxtjs/google-fonts"
+  ],
 
   primevue: {
     importTheme: { from: '~/assets/primeTheme.ts' },
@@ -42,4 +47,10 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  googleFonts: {
+    families: {
+      Roboto: "300..900"
+    }
+  }
 });

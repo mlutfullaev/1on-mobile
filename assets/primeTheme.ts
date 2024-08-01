@@ -1,5 +1,5 @@
-import Aura from '@primevue/themes/aura';
-import { definePreset } from '@primeuix/styled';
+import Aura from '@primevue/themes/aura'
+import { definePreset } from '@primeuix/styled'
 
 const MyPreset = definePreset(Aura, {
   semantic: {
@@ -14,11 +14,11 @@ const MyPreset = definePreset(Aura, {
       700: '{blue.700}',
       800: '{blue.800}',
       900: '{blue.900}',
-      950: '{blue.950}',
-    },
-  },
-});
+      950: '{blue.950}'
+    }
+  }
+})
 
 export default {
-  preset: MyPreset,
-};
+  preset: MyPreset
+}
