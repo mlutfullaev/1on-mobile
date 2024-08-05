@@ -1,30 +1,29 @@
 <script lang="ts" setup="">
-
-import {useMenu} from "~/composables/states";
+import { useMenu } from '~/composables/states'
 
 const isMenuVisible = useMenu()
 
 const menuItems = [
   {
-    to: "/",
-    icon: "pi pi-circle-fill",
-    text: "Asosiy"
+    to: '/',
+    icon: 'pi pi-circle-fill',
+    text: 'Asosiy'
   },
   {
-    to: "/orders",
-    icon: "pi pi-calendar",
-    text: "Uchrashuvlar"
+    to: '/orders',
+    icon: 'pi pi-calendar',
+    text: 'Uchrashuvlar'
   },
   {
-    to: "/settings",
-    icon: "pi pi-cog",
-    text: "Sozlamalar"
+    to: '/settings',
+    icon: 'pi pi-cog',
+    text: 'Sozlamalar'
   },
   {
-    to: "/notifications",
-    icon: "pi pi-bell",
-    text: "Bildirishnomalar"
-  },
+    to: '/notifications',
+    icon: 'pi pi-bell',
+    text: 'Bildirishnomalar'
+  }
   // {
   //   to: "/",
   //   icon: "pi pi-globe",
@@ -34,7 +33,6 @@ const menuItems = [
 </script>
 
 <template>
-
   <Sidebar
     v-model:visible="isMenuVisible"
     position="left"

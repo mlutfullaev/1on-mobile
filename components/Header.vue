@@ -1,6 +1,7 @@
 <script lang="ts" setup>
-import {useMenu} from "~/composables/states";
+import { useMenu, useNotification } from '~/composables/states'
 
+const isNotificationVisible = useNotification()
 const isMenuVisible = useMenu()
 </script>
 
@@ -12,9 +13,9 @@ const isMenuVisible = useMenu()
     <NuxtLink to="/">
       1on.uz
     </NuxtLink>
-    <NuxtLink to="/notifications">
+    <button @click="isNotificationVisible = true">
       <i class="pi pi-bell" />
-    </NuxtLink>
+    </button>
   </header>
 </template>
 

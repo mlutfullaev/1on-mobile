@@ -8,3 +8,15 @@ body {
   max-width: 500px;
   margin: 0 auto;
 }
+.page-header {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+
+  h3 {
+    width: 100%;
+    text-align: left;
+  }
+}
